@@ -1,0 +1,5 @@
+Spring boot é um framework que reúne diversas dependências e operações para facilitar a produção de código do desenvolvedor. Com ele, não precisamos nos preocupar com configurações para "subir" o servidor, ajustes para acesso a diversos bancos de dados e injeção de dependências - o framework possui IoC para realizar essas injeções.
+O Spring boot possui recursos para facilitar estruturação de projetos MVC, realizar testes, autenticação, etc. Com todas as suas dependências, diversas partes de nosso trabalho é facilitado. Além disso, ele é um framework leve e de fácil utilização.
+Podemos adicionar novas dependências simplesmente as informando para nosso gerenciador de dependências - como Gradle ou Maven. Essas dependências provêm acesso para bancos de dados, autenticação, etc.
+Quanto à melhor IDE, creio ser aquela que faz o seu trabalho - e todas fazem.
+Spring initializr é um site que pode desenvolver a estrutura inicial de um projeto Spring.
