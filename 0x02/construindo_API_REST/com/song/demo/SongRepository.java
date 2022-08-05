@@ -1,4 +1,4 @@
-package com.song.demo.songapi;
+package com.song.demo;
 
 import org.springframework.stereotype.Repository;
 

@@ -1,4 +1,4 @@
-package com.song.demo.songapi;
+package com.song.demo;
 
 public class Song {
 

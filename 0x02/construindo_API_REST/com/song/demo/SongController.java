@@ -1,4 +1,4 @@
-package com.song.demo.songapi;
+package com.song.demo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
