@@ -28,17 +28,17 @@ public class SongController {
         return songRepository.getSongById(id);
     }
 
-    @PostMapping("/addSong")
+    @PostMapping(path = "/addSong", consumes = "application/json", produces = "application/json")
     public void addSong(@RequestBody Song som) {
         songRepository.addSong(som);
     }
 
-    @PutMapping("updateSong")
+    @PutMapping(path = "/updateSong", consumes = "application/json", produces = "application/json")
     public void updadeSong(@RequestBody Song song) {
         songRepository.updateSong(song);
     }
 
-    @DeleteMapping("/removeSong")
+    @DeleteMapping(path = "/removeSong", consumes = "application/json", produces = "application/json")
     public void deleteSongById(@RequestBody Song song) {
         songRepository.removeSong(song);
     }
