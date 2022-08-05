@@ -1,4 +1,4 @@
-package com.ciandt.eliabe.songapi;
+package com.song.demo.songapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

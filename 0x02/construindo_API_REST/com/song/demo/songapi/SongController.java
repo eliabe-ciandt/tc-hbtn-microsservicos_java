@@ -1,4 +1,4 @@
-package com.ciandt.eliabe.songapi;
+package com.song.demo.songapi;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
