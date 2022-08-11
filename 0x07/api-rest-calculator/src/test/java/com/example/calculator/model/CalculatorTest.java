@@ -16,13 +16,13 @@ class CalculatorTest {
     }
 
     @Test
-    void sum() {
+    void sumTest() {
         assertEquals(3, calculator.sum(2.0, 1.0));
         assertThrows(NullPointerException.class, () -> calculator.sum(null, 2.0));
     }
 
     @Test
-    void sub() {
+    void subTest() {
         assertEquals(1992, calculator.sub(1991.0, -1.0));
     }
 
