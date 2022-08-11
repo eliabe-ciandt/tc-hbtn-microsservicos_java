@@ -27,29 +27,29 @@ class CalculatorTest {
     }
 
     @Test
-    void divide() {
+    void divideTest() {
         assertEquals(15, calculator.divide(45.0, 3.0));
         assertThrows(ArithmeticException.class, () -> calculator.divide(3.0, 0.0));
     }
 
     @Test
-    void factorial() {
+    void factorialTest() {
         assertEquals(120, calculator.factorial(5));
     }
 
     @Test
-    void integerToBinary() {
+    void integerToBinaryTest() {
         assertEquals(1, calculator.integerToBinary(1));
         assertEquals(101, calculator.integerToBinary(5));
         assertEquals(10100, calculator.integerToBinary(20));
     }
 
     @Test
-    void integerToHexadecimal() {
+    void integerToHexadecimalTest() {
         assertEquals("aa", calculator.integerToHexadecimal(170));
     }
 
     @Test
-    void calculeDayBetweenDate() {
+    void calculeDayBetweenDateTest() {
     }
 }
