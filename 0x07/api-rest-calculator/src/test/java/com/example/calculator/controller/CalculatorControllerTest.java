@@ -40,7 +40,7 @@ public class CalculatorControllerTest {
     //        calculeDayBetweenDate, integerToBinary e integerToHexadecimal
 
     @Test
-    void subNumbers() throws Exception {
+    void subTest() throws Exception {
         RequestBuilder request = get("/calculator/subNumbers")
                 .param("number1", "2.0").param("number2", "1");
         MvcResult result = mvc.perform(request).andReturn();
