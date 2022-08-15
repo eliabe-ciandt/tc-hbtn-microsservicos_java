@@ -19,7 +19,7 @@ public class ProductController {
     ProductRepository productRepository;
 
     @ApiOperation(value = "Responsável por retornar uma mensagem de boas vindas.")
-    @GetMapping(value = "welcome")
+    @GetMapping(value = "/welcome")
     public String welcome() {
         return "BEM VINDO À PRODUCT REST API.";
     }
@@ -28,7 +28,7 @@ public class ProductController {
     @ApiResponses(value = {
             @ApiResponse(code = 11, message = "Warning - the process returned more than 1000 products")
     })
-    @GetMapping(value = "allProducts")
+    @GetMapping(value = "/allProducts")
     public ResponseEntity getAllProducts() {
         return ResponseEntity.ok(productRepository.getAllProducts());
     }
@@ -37,7 +37,7 @@ public class ProductController {
     @ApiResponses(value = {
             @ApiResponse(code = 10, message = "Required fields not informed")
     })
-    @PostMapping(value = "addProduct")
+    @PostMapping(value = "/addProduct")
     public void addProduct(@RequestBody Product product) {
         productRepository.addProduct(product);
     }
@@ -46,7 +46,7 @@ public class ProductController {
     @ApiResponses(value = {
             @ApiResponse(code = 12, message = "The field id was not informed. This information is required")
     })
-    @GetMapping(value = "findProductById/{id}")
+    @GetMapping(value = "/findProductById/{id}")
     public ResponseEntity findById(@PathVariable(name = "id") long id) {
         return ResponseEntity.ok(productRepository.getProductById(id));
     }
@@ -55,7 +55,7 @@ public class ProductController {
     @ApiResponses(value = {
             @ApiResponse(code = 14, message = "No information has been updated. The new information is the same as recorded in database")
     })
-    @PutMapping(value = "updateProduct")
+    @PutMapping(value = "/updateProduct")
     public void updateProduct(@RequestBody Product product) {
         productRepository.updateProduct(product);
     }
@@ -64,7 +64,7 @@ public class ProductController {
     @ApiResponses(value = {
             @ApiResponse(code = 13, message = "User not allowed to remove a product from this category.")
     })
-    @DeleteMapping(value = "removeProduct")
+    @DeleteMapping(value = "/removeProduct")
     public void deleteProduct(@RequestBody Product product) {
         productRepository.removeProduct(product);
     }
